@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Levid Lima | Interactive card details form</title>
+
+</head>
+
+<body>
+
+  <div class="backcard">
+    <div class="backnumber">000</div>
+  </div>
+
+  <div class="frontcard">
+    <div class="circle">
+      <div class="bigcircle"></div>
+      <div class="smallcircle"></div>
+    </div>
+
+    <div class="details">
+      <div class="frontnumber">0000 0000 0000 0000</div>
+      <div class="cardname">
+        <div class="name">Jane Appleseed</div>
+        <div class="date"><span class="mm">00</span> / <span class="yy">00</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="form">
+    <div class="cardholdername">
+      CARDHOLDER NAME
+      <input type="text" class="cardholdernameinput" placeholder="e.g Jane">
+    </div>
+
+    <div class="cardnumber">
+      CARD NUMBER
+      <input type="text" class="cardholdernameinput" placeholder="e.g Jane 1234 5678 9123 0000">
+      <div class="numbererror">Wrong format, numbers only and 16 digits</div>
+    </div>
+
+    <div class="datecvc">
+      <div class="label">
+        <p>EXP. DATE (MM/YY)</p>
+        <p>CVC</p>
+      </div>
+
+      <div class="inputs">
+        <input type="number" class="month" placeholder="MM">
+        <input type="number" class="year" placeholder="YY">
+        <input type="number" class="cvc" placeholder="e.g 123">
+      </div>
+
+      <div class="error">
+        <div class="monthyearerror">Can't be Blank</div>
+        <div class="cvcerror">Can't be Blank</div>
+      </div>
+
+      <div class="button">Confirm</div>
+    </div>
+  </div>
+
+  <!-- Completed state start -->
+
+  <div class="formcompleted">
+    <div class="center">
+      <img src="images/icon-complete.svg" alt="icon-complete">
+      <div class="thankyou">Thank you!</div>
+      <div class="added">We've added your card details</div>
+      <div class="continue">Continue</div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
